@@ -39,6 +39,13 @@ void loop() {
     displayRFID(tagID);
   }
 
+  displayReadMode();
+
+}
+
+void displayReadMode() {
+  lcd.setCursor(0, 1);
+  lcd.print("Tap to read");
 }
 
 void displayRFID(String uid) {

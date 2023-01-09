@@ -17,7 +17,7 @@ boolean isRFIDDetected()
 
   tagID = "";
 
-  if (rfid.PICC_IsNewCardPresent()) { // new tag is available
+  if (rfid.PICC_IsNewCardPresent()) { // Check new tag is available
 
     if (rfid.PICC_ReadCardSerial()) { // NUID has been readed
 
